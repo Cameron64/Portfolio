@@ -1,0 +1,49 @@
+﻿<%@ Master Language="VB" CodeFile="Template.master.vb" Inherits="Template" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="CSS/Styles.css" type="text/css"/>
+    <script src="JS/angular.min.js"></script>
+    <script src="JS/ngStorage.min.js"></script>
+    <script src="JS/magic.js"></script>
+
+    <title>Cameron</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body ng-app="proSite" ng-controller="TabController">
+    <form id="form1" runat="server">
+          <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="Default.aspx">Cameron Rodriguez</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li ng-class="{ 'active': $storage.home, '': !$storage.home }"  ><a ng-click="$storage.home = 1;" href="Default.aspx">Home</a></li>
+            <li ng-class="{ 'active': $storage.about, '': !$storage.about }" ><a ng-click="$storage.about = 1;" href="Resume.aspx">Resume</a></li>
+            <li ng-class="{ 'active': $storage.contact, '': !$storage.contact }"><a ng-click="$storage.contact = 1;" href="Contact.aspx">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    
+
+   
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿html{
+    height:100%;
+}
+body {
+  padding-top: 50px;
+  background-color:#C2D4F1;
+  height:100%;
+}
+form{
+    height:100%;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.frontImg{
+    width:90%;
+    transition: width .5s;
+    border:solid 1px black;
+    margin-top:5px;
+}
+.frontDiv:hover .frontImg{
+    width:100%;
+    transition: width .5s;
+}
+.frontDiv:hover .hoverText{
+     opacity:.3;
+
+}
+.headText{
+    opacity:0;
+    position:absolute;
+    left:10%;
+    width:80%;
+    z-index:100;
+}
+
+.frontDiv:hover .headText{
+    opacity:1;
+  transition: opacity .75s;
+}
+.bodyText{
+    opacity:0;
+    position:absolute;
+    top:100px;
+    z-index:100;
+    word-wrap: normal;
+    left:10%; width:80%;
+}
+.frontDiv:hover .bodyText{
+    opacity:1;
+  transition: opacity .75s;
+}
+.container-fluid{
+}
+
