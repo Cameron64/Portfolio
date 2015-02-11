@@ -53,4 +53,6 @@ form{
 }
 .container-fluid{
 }
-
+.form-control{
+    width:200px;
+}
