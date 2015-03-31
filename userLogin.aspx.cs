@@ -8,16 +8,9 @@ public partial class login : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+        lbl1.Text = "";
     }
-    protected void email_TextChanged(object sender, EventArgs e)
-    {
-
-    }
-    protected void password_TextChanged(object sender, EventArgs e)
-    {
-
-    }
+  
     protected void submit_Click(object sender, EventArgs e)
     {
         if (password.Text == "password" && email.Text != "")

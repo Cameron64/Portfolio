@@ -10,7 +10,7 @@ public partial class welcome : System.Web.UI.Page
     {
         if (Session["authenticated"] == "true")
         {
-            lblMessage.Text = Session["Email"].ToString();
+            YoB.Text = Session["YoB"].ToString();
         }
         else
         {
